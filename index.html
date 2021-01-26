@@ -10,13 +10,15 @@
 				font-family: digit;
 				src: url('digital-7_mono.ttf') format("truetype");
 			}
+			html { overflow-y:yes; }
 		</style>
-           
+		<frame  scrolling="yes">
+
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/garden.js"></script>
 		<script type="text/javascript" src="js/functions.js"></script>
 	</head>
-	<body >
+	<body style="overflow-x:hidden">
 		<div class="hovertreeinfo">
 			<h2>For My Special CC</h2>
 		</div>
@@ -67,25 +69,27 @@
 			</div>
 		</div>
 
+		<div>
+		</div>
 
+		<div id="mainDiv">
+			<div id="content">
+				<div id="code">
+					<br />
+					<br />
+					<div class="keyword"><p>&nbsp;&nbsp;&nbsp;&nbsp;临走时突然给我了一封信，回都没机会回你。本来想留作100天的，但如果是你的话，可能根本留不到吧。没办法，对你，真的没有抵抗力。</p>
+					<p>既然你选择了写信，想了想我还是用这种方式吧，只是我们的照片还不够多，凑不够满墙的回忆，只好先拿你的照片了。太久不做网页了，如果丑，那你顺着网线来咬我啊。</p>
+					<p>正好我也可以一把把你搂在怀里了。(就想牵你的手，抱你亲你。嗬，我以前不这样的，都怪你，太迷人)</p>
+					<p>如果以前的我知道自己会花整整两天做这些，可能会笑自己吧，毕竟我这么不喜欢麻烦的人。可是没办法，谁让就这么喜欢你呢。</p>
+					<p>一个人可以走的很快，两个人可以走的又快又远。虽然自己干啥啥不行，偷懒第一名，但是为了家里这么可爱的cc，也得加倍努力了。</p>
+					<p>现在就差一首为你唱的歌做背景乐了。老脸一红，不会唱歌了，吉他也不会弹了。还是等我以后有勇气用自己唱的吧，逃。</p>
 
-
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<br />
-				<br />
-				<div class="keyword"><center><p>&nbsp;&nbsp;&nbsp;&nbsp;好久不写这些了，真的生疏了</p>
-				<p>临走时突然送给我封信，连回复都不知道怎么回</p>
-				<p>想了想还是用这种方式吧，只是我们的照片还不够多，凑不够满墙的回忆</p>
-				<p>如果以前的我知道自己会花精力做这些事情，可能会笑自己吧</p>
+				</div>
 
 			</div>
 
+			</div>
 		</div>
-
-		</div>
-	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
@@ -125,11 +129,8 @@
 
 
 
-
-
-
 		<!-- 本地音乐，双击index.html -->
-		<div style="position:absolute;left:0px;bottom:0px;">
+		<div style="position:absolute;left:0px;bottom:0px;" hidden>
 			<!-- 隐藏播放条：删除ontrols="controls"部分 -->
 			<audio autoplay="autopaly" loop="loop" controls="controls" id="audios" autostart="true">
 				<source src="music/qianyuqianxun.mp3" type="audio/mp3" />
