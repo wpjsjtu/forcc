@@ -5,13 +5,23 @@
 		<title>Photo Wall</title>
 		<link rel="stylesheet" href="./css/hovertree.css" />
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<style type="text/css">
+			@font-face {
+				font-family: digit;
+				src: url('digital-7_mono.ttf') format("truetype");
+			}
+		</style>
+           
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/garden.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
 	</head>
 	<body >
 		<div class="hovertreeinfo">
 			<h2>For My Special CC</h2>
 		</div>
 		<!--/*外层最大容器*/-->
-		<div class="wrap">
+		<div class="wrap" style="text-align: center">
 			<!--	/*包裹所有元素的容器*/-->
 			<div class="cube">
 				<!--前面图片 -->
@@ -56,6 +66,67 @@
 				</span>
 			</div>
 		</div>
+
+
+
+
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<br />
+				<br />
+				<div class="keyword"><center><p>&nbsp;&nbsp;&nbsp;&nbsp;好久不写这些了，真的生疏了</p>
+				<p>临走时突然送给我封信，连回复都不知道怎么回</p>
+				<p>想了想还是用这种方式吧，只是我们的照片还不够多，凑不够满墙的回忆</p>
+				<p>如果以前的我知道自己会花精力做这些事情，可能会笑自己吧</p>
+
+			</div>
+
+		</div>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2020, 10, 8);
+		together.setHours(10);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 2500);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 250);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+
+
+
+
+
+
+
+
 
 		<!-- 本地音乐，双击index.html -->
 		<div style="position:absolute;left:0px;bottom:0px;">

@@ -1,7 +1,7 @@
 html{
-	background:linear-gradient(#FF6666 0%,#336699 20%);/*背景渐变颜色*/
+	background:linear-gradient(#F8F8F5 0%,#F6F6F6 20%);/*背景渐变颜色*/
     height: 100%;
-    color:#99cc33;/*文字颜色*/
+    color:#555;/*文字颜色*/
 }
 
 /*最外层容器样式*/
@@ -17,7 +17,7 @@ html{
 .cube{
 	width: 200px;
 	height: 200px;
-	margin: 0 auto;
+	margin: 150 auto;
 	transform-style: preserve-3d;
 	transform: rotateX(-30deg) rotateY(-80deg);
 	-webkit-animation: rotate 20s infinite;
